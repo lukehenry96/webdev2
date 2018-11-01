@@ -36,7 +36,7 @@ var airportIcon = L.icon({
     
 });
 //create a custom layer
-var customLayer = L.geoJson(null  ,{
+var customLayer = L.geoJson(null, {
     pointToLayer: function(feature, latlng){
         return L.marker(latlng,{icon: airportIcon})
     }
